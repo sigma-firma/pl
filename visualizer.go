@@ -10,7 +10,7 @@ import (
 // visualizer prints output to the terminal, allowing us to visualize the
 // intersections behavior
 func visualize(r *road) {
-	clearTerm(100)
+	clearTerm(50)
 	var r1, r2 *road
 	if r.ID == x.Roads[0].ID {
 		r1 = r
