@@ -41,4 +41,7 @@ Washington DC.
 
     // remember: lives are at stake here, take this seriously
 
+## About the Software
 
+We implement golangs <-time.Ticker.C (basically countdown channels) for timing
+the lights so that we don't cause collisions.
