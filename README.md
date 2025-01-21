@@ -1,4 +1,4 @@
-# Purple-Light - Generic Traffic Light Software
+# Purple-Light (pl) - Generic Traffic Light Software
 
 A model program supporting all of the traffic light functionality that I've 
 "reverse engineered" over my time driving and observing the behavior of 
@@ -27,3 +27,18 @@ The government really doesn't want me doing this, but I do anyway, as protest.
 Why is the official traffic light software enshrouded in mystery? It makes no 
 sense. Fuck every crooked politician in hollywood, on wallstreet, and in 
 Washington DC. 
+
+## Running the Software on a Human Computer
+
+    // cd to your home dir, clone the repo, and cd into the repo dir
+    cd && git clone https://github.com/hartsfield/pl && cd pl
+
+    // install dependencies (oh yeah you need the Go programming language)
+    go mod tidy
+
+    // run
+    go run .
+
+    // remember: lives are at stake here, take this seriously
+
+
