@@ -4,7 +4,7 @@ A model program supporting all of the traffic light functionality that I've
 "reverse engineered" over my time driving and observing the behavior of 
 different traffic lights at different intersections across the United States.
 
-[Screen Recording 2025-01-19 at 3.22.38 PM.webm](https://github.com/user-attachments/assets/426883b1-7379-48a8-bea8-93875720a1f3)
+[Screen Recording 2025-01-21 at 12.08.20 PM.webm](https://github.com/user-attachments/assets/9d12d4ed-c597-4636-b5be-3908bda38682)
 
 ## Colors Planned for Support by Feb 2025
  - Red
