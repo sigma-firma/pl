@@ -73,6 +73,8 @@ var (
 	}
 )
 
+// CheckSetAndReset is used to check the sensors, set the lights based on
+// the sensor data, and reset the sensors
 func (r *road) CheckSetAndReset() {
 	if r.LeftBoundSensor || r.RightBoundSensor {
 		<-x.ActiveRoad.SetState(&yellow).C
