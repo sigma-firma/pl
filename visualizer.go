@@ -1,3 +1,5 @@
+// visualizer.go houses functions used for printing useful visualizations to
+// the terminal
 package main
 
 import (
@@ -5,6 +7,8 @@ import (
 	"time"
 )
 
+// visualizer prints output to the terminal, allowing us to visualize the
+// intersections behavior
 func visualize(r *road) {
 	clearTerm(100)
 	var r1, r2 *road
@@ -34,6 +38,8 @@ func visualize(r *road) {
 	time.Sleep(100 * time.Millisecond)
 }
 
+// clearTerm clears the terminal between "frames" by printing the number of
+// blank lines
 func clearTerm(lines int) {
 	for i := 0; i <= lines; i++ {
 		fmt.Println()

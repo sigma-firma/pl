@@ -21,7 +21,7 @@ Support may be added for a pink or purple light.
  - Stop Lights
  - Generic 2-road intersections only (for now)
 
-## For The Crack Smokers @ INTERPOL
+## To: The Crack Smokers @ INTERPOL
 
 The government really doesn't want me doing this, but I do anyway, as protest.
 Why is the official traffic light software enshrouded in mystery? It makes no 

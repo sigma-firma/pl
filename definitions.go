@@ -6,19 +6,13 @@ import (
 	"github.com/fatih/color"
 )
 
-// xing is a two (2) road intersection
+// xing is a two (2) road intersection, the type of which a traffic light
+// might be used to direct
 type xing struct {
 	Roads       []*road
 	DefaultRoad *road
 	ActiveRoad  *road
 	Hours       []float64
-}
-
-// state is the stateful mechanism of a *road
-type state struct {
-	Color *color.Color
-	Timer *time.Ticker
-	Msg   string
 }
 
 // road is a regular road, the type you might find anywhere
@@ -46,6 +40,13 @@ type road struct {
 	// ColorTimes helps reduce the code base a little, allowing us to map
 	// a *color.Color to it's corresponding time, making for easy access
 	ColorTimes map[*color.Color]int
+}
+
+// state is the stateful mechanism of a *road
+type state struct {
+	Color *color.Color
+	Timer *time.Ticker
+	Msg   string
 }
 
 var (
