@@ -1,3 +1,4 @@
+// definitions.go houses the struct definitions, methods, and global vars
 package main
 
 import (

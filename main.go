@@ -1,3 +1,9 @@
+// This package is designed to model traffic light software, which I've reverse
+// engineered in my time driving over the years. It is provided as is, with no
+// warranty, under the MIT license. Yes its so good MIT gave it a license.
+//
+// WARNING: Not designed to run on actual traffic light hardware. Using the
+// default timing will result in DEATH. You have been warned :^|
 package main
 
 import (
