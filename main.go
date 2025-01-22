@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	loop(1) // magic(k), see: loop()
+	loop(1) // magic[k], see: loop()
 }
 
 // loop checks the sensors of the inactive road to see if vehicles have pulled
@@ -25,17 +25,17 @@ func loop(i int) {
 }
 
 // init is used to initialize/tune startup variables, and as we all know, init
-// functions are hoisted above the main function
+// functions are hoisted above the main() function
 func init() {
 	// fine tuning the colors
 	red.AddBgRGB(255, 118, 97).AddRGB(255, 255, 255)
 	yellow.AddBgRGB(255, 255, 0).AddRGB(102, 102, 0)
 	green.AddBgRGB(182, 212, 108).AddRGB(255, 255, 255)
 
-	// set the default road to the xing.ActiveRoad
+	// set the xing.ActiveRoad road to the xing.DefaultRoad
 	x.ActiveRoad = x.DefaultRoad
 
-	// set up the ColorTime map, which maps *color.Color to int to use in
+	// set up the ColorTime map, which maps *color.Color to int for use in
 	// our timing mechanisms
 	for _, r := range x.Roads {
 		r.ColorTimes = make(map[*color.Color]int)
@@ -45,8 +45,8 @@ func init() {
 
 		// set the initial state of each road
 		r.State = &state{
-			Color: &red, // red
-			Timer: time.NewTicker(100),
+			Color: &red,                // red
+			Timer: time.NewTicker(100), // placeholder, does nothing
 			Msg:   " INACTIVE",
 		}
 	}
