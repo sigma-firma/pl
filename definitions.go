@@ -7,7 +7,7 @@ import (
 	"github.com/fatih/color"
 )
 
-// xing is a two (2) road intersection, the type of which a traffic light
+// xing{} is a two (2) road intersection, the type of which a traffic light
 // might be used to direct
 type xing struct {
 	Roads       []*road
@@ -16,11 +16,11 @@ type xing struct {
 	Hours       []float64
 }
 
-// road is a regular road, the type you might find anywhere
+// road{} is a regular road, the type you might find anywhere
 type road struct {
 	// ID is the roads identifier
 	ID string
-	// State is where we store ther state of the roads light and sensor
+	// State is where we store the state of the roads light and sensor
 	// activity
 	State *state
 	// LeftBoundSensor is triggered when traffic triggers the sensor in the
@@ -29,21 +29,21 @@ type road struct {
 	// RightBoundSensor is triggered when traffic triggers the sensor in
 	// the right bound lane
 	RightBoundSensor bool
-	// MinGreenTime is the minimum number os second a road should stay
+	// MinGreenTime is the minimum number of seconds a road should stay
 	// green
 	MinGreenTime int
 	// YellowTime is the number of seconds a light should stay on yellow
 	YellowTime int
 	// RedTime is the number of seconds a light should stay red after
-	// turning red from yellow, butbefore the green traffic light is
-	// activated on the partner road
+	// turning red from yellow, but before the green traffic light is
+	// activated on the intersecting road
 	RedTime int
 	// ColorTimes helps reduce the code base a little, allowing us to map
 	// a *color.Color to it's corresponding time, making for easy access
 	ColorTimes map[*color.Color]int
 }
 
-// state is the stateful mechanism of a *road
+// state{} is the stateful mechanism of a road{}
 type state struct {
 	Color *color.Color
 	Timer *time.Ticker
@@ -68,13 +68,14 @@ var (
 		YellowTime:   1,
 		RedTime:      1,
 	}
+	// add the *roads{} to a *xing{}
 	x *xing = &xing{
 		Roads:       []*road{r1, r2},
 		DefaultRoad: r1,
 	}
 )
 
-// CheckSetAndReset is used to check the sensors, set the lights based on
+// CheckSetAndReset() is used to check the sensors, set the lights based on
 // the sensor data, and reset the sensors
 func (r *road) CheckSetAndReset() {
 	if r.LeftBoundSensor || r.RightBoundSensor {
@@ -88,7 +89,7 @@ func (r *road) CheckSetAndReset() {
 	r.LeftBoundSensor = true
 }
 
-// SetState is used to set the state of a roads light based on the color passed
+// SetState{} is used to set the state of a roads light based on the color passed
 // to it, while also setting the opposing roads lights to the proper color
 func (r *road) SetState(c *color.Color) *time.Ticker {
 	r.State.Timer = time.NewTicker(time.Second * time.Duration(r.ColorTimes[c]))
