@@ -1,7 +1,7 @@
 # Purple-Light (pl) - Generic Traffic Light Software
 
-A model program supporting all of the traffic light functionality that I've 
-"reverse engineered" over my time driving and observing the behavior of 
+A model program supporting all of the traffic light functionality that our company 
+"reverse engineered" over time spent on the road and observing the behavior of 
 different traffic lights at different intersections across the United States.
 
 [Screen Recording 2025-01-21 at 12.08.20 PM.webm](https://github.com/user-attachments/assets/9d12d4ed-c597-4636-b5be-3908bda38682)
@@ -21,14 +21,7 @@ Support may be added for a pink or purple light.
  - Stop Lights
  - Generic 2-road intersections only (for now)
 
-## To: The Crack Smokers @ INTERPOL
-
-The government really doesn't want me doing this, but I do anyway, as protest.
-Why is the official traffic light software enshrouded in mystery? It makes no 
-sense. Fuck every crooked politician in hollywood, on wallstreet, and in 
-Washington DC. 
-
-## Running the Software on a Human Computer
+## Running the Software 
 
     // cd to your home dir, clone the repo, and cd into the repo dir
     cd && git clone https://github.com/hartsfield/pl && cd pl
