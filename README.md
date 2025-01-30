@@ -24,7 +24,7 @@ Support may be added for a pink or purple light.
 ## Running the Software 
 
     // cd to your home dir, clone the repo, and cd into the repo dir
-    cd && git clone https://github.com/hartsfield/pl && cd pl
+    cd && git clone https://github.com/sigma-firma/pl && cd pl
 
     // install dependencies (oh yeah you need the Go programming language)
     go mod tidy
