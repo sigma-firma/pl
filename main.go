@@ -13,19 +13,18 @@ import (
 )
 
 func main() {
-	loop(1) // magic[k], see: loop()
+	loop(1) // see: loop()
 }
 
 // loop checks the sensors of the inactive road to see if vehicles have pulled
-// up to the light. Watch out, this is a recursive function.
+// up to the light.
 func loop(i int) {
 	for ; x.Roads[i] != x.ActiveRoad; loop(1 - i) {
 		x.Roads[i].CheckSetAndReset()
 	}
 }
 
-// init is used to initialize/tune startup variables, and as we all know, init
-// functions are hoisted above the main() function
+// init is used to initialize/tune startup variables.
 func init() {
 	// fine tuning the colors
 	red.AddBgRGB(255, 118, 97).AddRGB(255, 255, 255)
