@@ -1,4 +1,4 @@
-# Purple-Light (pl) - Generic Traffic Light Software
+# Purple-Light (pl) - Generic Traffic Light Software Reverse engineered from years of traffic light observation & reconnaissance
 
 A model program supporting all of the traffic light functionality that our company 
 "reverse engineered" over time spent on the road and observing the behavior of 
